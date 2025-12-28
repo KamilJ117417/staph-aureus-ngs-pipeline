@@ -1,0 +1,48 @@
+# --- NGS / bioinformatics outputs ---
+# raw reads & SRA
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.sra
+data/
+
+# alignments
+*.sam
+*.bam
+*.bai
+*.cram
+*.crai
+
+# variants
+*.vcf
+*.vcf.gz
+*.bcf
+*.bcf.gz
+*.tbi
+*.csi
+
+# QC / reports
+*_fastqc/
+fastqc_reports/
+multiqc_data/
+*.html
+*.zip
+
+# reference indexes
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
+*.fai
+*.dict
+
+# logs
+*.log
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
