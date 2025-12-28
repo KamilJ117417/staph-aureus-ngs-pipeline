@@ -2,14 +2,12 @@
 
 Repozytorium zawiera prosty, powtarzalny pipeline do analizy dwóch próbek *Staphylococcus aureus* (SRR30615855 i SRR30615856; projekt PRJNA1158983) – od pobrania danych, przez QC i mapowanie do genomu referencyjnego, po wywołanie wariantów oraz podstawowe raporty.
 
-> Ten repo to „wersja do oddania / pokazania” na GitHub: ma czytelną strukturę, instrukcję uruchomienia i skrypty. Wyniki (duże pliki) są ignorowane przez `.gitignore`.
-
 ## Co jest w środku?
 
 - `scripts/pipeline.sh` – główny pipeline end‑to‑end (SRA → FASTQ → QC → trimming → mapowanie → warianty).
 - `scripts/map_bwa.sh` – osobny skrypt mapowania (BWA MEM + sort + index + flagstat).
 - `environment.yml` – środowisko conda z narzędziami (bioconda).
-- `report/` – Twoja prezentacja / opis projektu w PDF.
+- `report/` – Prezentacja projektu w PDF.
 - `docs/` – krótkie notatki (np. VEP/GO enrichment).
 
 ## Wymagania
@@ -58,5 +56,6 @@ Najważniejsze pliki (po udanym przebiegu):
 Zobacz: `docs/downstream_vep_go.md`.
 
 ## Autor
+Kamil Jaworowski
 
 Kamil Jaworowski
